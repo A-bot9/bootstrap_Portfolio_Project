@@ -25,8 +25,15 @@ footer {
 	padding: 30px; /* 30px top, bottom, left and right... ALL AROUND */
 	background-image: linear-gradient(to right, #5637dd, #3046c5, #60106b);
 	color: white;
+	margin: 0;
 }
 
 .row-content {
 	padding: 50px 0; /* 50px top and bottom, 0px left and right */
+	border-bottom: 1px ridge;
+	min-height: 200px;
+}
+
+.navbar {
+	background-color: #901cad;
 }
