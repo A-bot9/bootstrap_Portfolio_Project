@@ -1,3 +1,3 @@
-# bootstrap Portfolio Project
+# Bootstrap Portfolio Project
 
 ## Jose Lozano & Adrian Leal
