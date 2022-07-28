@@ -1,1 +1,23 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
 
+.jumbotron {
+    background-image: url(../images/backgroundcf.jpg);
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    border-radius: 0px !important;
+}
+
+.jumbotron h1 {
+    margin: 30px 0;
+    font-size: 30px;
+    line-height: 1.5;
+}
+
+.intro {
+    padding-top: 160px;
+}
