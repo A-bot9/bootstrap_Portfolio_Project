@@ -3,7 +3,8 @@ body {
 }
 
 .navbar {
-	position: relative;
+	position: sticky;
+	top: 0;
 	z-index: 1;
 	font-size: 1.2rem;
 }
@@ -36,7 +37,6 @@ body {
 
 .content-style {
 	padding: 50px 0; /* 50px top and bottom, 0px left and right */
-	border-bottom: 1px ridge;
 	min-height: 200px;
 }
 
@@ -50,6 +50,7 @@ body {
 
 #carousel-font-size h3 {
 	font-size: 2rem;
+	font-weight: bold;
 }
 
 #carousel-font-size p {
