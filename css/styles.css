@@ -1,5 +1,6 @@
 body {
 	font-family: 'Barlow Condensed', sans-serif;
+	background-color: #F0EBE3;
 }
 
 .navbar {
@@ -15,9 +16,9 @@ body {
 }
 
 .jumbotron {
-	background-image: url('/images/cosmofitnesshero.jpg');
+	background-image: url('/img/cosmofitnesshero.jpg');
 	background-size: cover;
-	height: 55vh;
+	height: 50vh;
 	background-position: center;
 }
 
@@ -35,8 +36,43 @@ body {
 	font-size: 2rem;
 }
 
+.row-content {
+	padding: 50px 0;
+	border-bottom: 1px ridge;
+	min-height: 200px;
+}
+
+#memberjumbotron {
+	background-image: url('/img/memberships.jpg');
+	background-size: cover;
+	height: 30vh;
+	background-position: center;
+}
+
+#classjumbotron {
+	background-image: url('/img/classes.jpg');
+	background-size: cover;
+	height: 30vh;
+	background-position: center;
+}
+
+#amenitesjumbotron {
+	background-image: url('/img/amenites.jpg');
+	background-size: cover;
+	height: 30vh;
+	background-position: center;
+}
+
+#aboutjumbotron {
+	background-image: url('/img/amenites.jpg');
+	background-size: cover;
+	height: 30vh;
+	background-position: center;
+}
+
 .content-style {
-	padding: 50px 0; /* 50px top and bottom, 0px left and right */
+	padding: 50px 0;
+	/* 50px top and bottom, 0px left and right */
 	min-height: 200px;
 }
 
@@ -56,4 +92,9 @@ body {
 #carousel-font-size p {
 	font-size: 1.25rem;
 	color: grey;
+}
+
+#classescf {
+	width: 50%;
+	height: 50%;
 }
