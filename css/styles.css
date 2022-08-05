@@ -58,8 +58,8 @@ body {
 	background-position: center;
 }
 
-#amenitesjumbotron {
-	background-image: url('/img/amenites.jpg');
+#amenitiesjumbotron {
+	background-image: url('/img/amenities.jpg');
 	background-size: cover;
 	background-position: center;
 }
