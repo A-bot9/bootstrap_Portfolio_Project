@@ -1,6 +1,6 @@
 body {
 	font-family: 'Barlow Condensed', sans-serif;
-	background-color: #F0EBE3;
+	background-color: #f0ebe3;
 }
 
 .navbar {
@@ -17,20 +17,18 @@ body {
 }
 
 .jumbotron {
-
 	background-size: cover;
 	height: 50vh;
 	background-position: center;
 }
 
 .slogan-1 {
-	color: #F0EBE3;
+	color: #f0ebe3;
 	text-shadow: 1px 2px 4px #000 !important;
 	font-size: 65px;
 	text-transform: uppercase;
 	letter-spacing: 4px;
 }
-
 
 .jumbotron h1 {
 	line-height: 1.5;
@@ -109,11 +107,44 @@ body {
 }
 
 .carousel-caption {
-	color: #F0EBE3;
+	color: #f0ebe3;
 	text-shadow: 1px 2px 4px #000 !important;
 }
 
 .carousel {
 	border: solid #ffc54d;
-	
+}
+
+/* About section */
+#ALL-about-styling a {
+	color: #000;
+}
+
+#ALL-about-styling a {
+	color: inherit;
+}
+
+#cards .card {
+	padding: 10px 0;
+	margin: 5px 0;
+}
+
+.card-bottom {
+	border-bottom: 1px solid;
+	color: black;
+}
+
+#cards h5 {
+	font-size: 1.3rem;
+	font-weight: bold;
+}
+
+/* ALL footer sections */
+.icon-style {
+	color: white;
+	font-size: 30px;
+}
+
+.icon-style:hover {
+	color: #ffc54d;
 }

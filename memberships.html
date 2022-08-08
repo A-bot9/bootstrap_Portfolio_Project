@@ -1,163 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<!-- Required meta tags always come first -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-	<!-- Required meta tags always come first -->
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
 
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+		<!-- Additional CSS must be placed after Bootstrap CSS -->
+		<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="css/styles.css" />
+		<!-- <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" /> -->
+		<!-- <link
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+			rel="stylesheet"
+		/> -->
+		<link href="https://fonts.googleapis.com/css?family=Viga" rel="stylesheet" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Viga&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap"
+			rel="stylesheet"
+		/>
 
-	<!-- Additional CSS must be placed after Bootstrap CSS -->
-	<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
-	<link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Viga" rel="stylesheet" />
-	<link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet" />
-	<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap" rel="stylesheet" />
-	<link rel="stylesheet" href="css/styles.css" />
+		<title>Cosmo Fitness</title>
+	</head>
 
-	<title>Cosmo Fitness</title>
-</head>
-
-<body>
-	<!--Navbar-->
-	<nav class="navbar navbar-expand-md navbar-light">
-		<div class="container">
-			<a class="navbar-brand" href="#">
-				<img src="img/logo_200x200.png" class="me-2" height="40" alt="CosmoFitness Logo" loading="lazy" />Cosmo
-				Fitness</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-				aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-				<div class="navbar-nav ml-auto">
-					<a class="nav-item nav-link" href="index.html">Home</a>
-					<a class="nav-item nav-link active" href="#">Memberships</a>
-					<a class="nav-item nav-link" href="classes.html">Classes</a>
-					<a class="nav-item nav-link" href="amenities.html">Amenities</a>
-					<a class="nav-item nav-link" href="about.html">About</a>
-				</div>
-			</div>
-		</div>
-	</nav>
-	<!--Navbar-->
-
-	<!--Jumbotron-->
-	<div class="jumbotron jumbotron-fluid text-center" id="memberjumbotron">
-		<div class="container">
-			<h1 class="slogan-1">MEMBERSHIP<br />OPTIONS</h1>
-		</div>
-	</div>
-
-	<!--Jumbotron-->
-
-	<!--Memberships-->
-
-	<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-		<h1 class="display-4">Membership Options</h1>
-		<p class="lead">Select Your Plan</p>
-	</div>
-
-	<div class="container cds">
-
-		<div class="card-deck mb-3 text-center">
-			<div class="card mb-4 box-shadow">
-				<div class="card-header">
-					<h4 class="my-0 font-weight-normal">Platinum</h4>
-				</div>
-				<div class="card-body">
-					<h1 class="card-title pricing-card-title">$39.99 <small class="text-muted">/ mo</small></h1>
-					<ul class="list-unstyled mt-3 mb-4">
-						<li>National Access</li>
-						<li>All Gold and Silver Benefits</li>
-						<li>2 Buddy Passes</li>
-						<li>Access to Personal Trainers</li>
-						<li>Unlimited Classes</li>
-					</ul>
-					<button type="button" class="btn btn-lg btn-danger">JOIN NOW</button>
-				</div>
-			</div>
-			<div class="card mb-4 box-shadow">
-				<div class="card-header">
-					<h4 class="my-0 font-weight-normal">Gold</h4>
-				</div>
-				<div class="card-body">
-					<h1 class="card-title pricing-card-title">$24.99 <small class="text-muted">/ mo</small></h1>
-					<ul class="list-unstyled mt-3 mb-4">
-						<li>Regional Access</li>
-						<li>All Silver Benefits</li>
-						<li>All amenities</li>
-						<li>2x Classes a week</li>
-						<li>Discount on Personal Trainers</li>
-					</ul>
-					<button type="button" class="btn btn-lg btn-danger">JOIN NOW</button>
-				</div>
-			</div>
-			<div class="card mb-4 box-shadow">
-				<div class="card-header">
-					<h4 class="my-0 font-weight-normal">Silver</h4>
-				</div>
-				<div class="card-body">
-					<h1 class="card-title pricing-card-title">$9.99 <small class="text-muted">/ mo</small></h1>
-					<ul class="list-unstyled mt-3 mb-4">
-						<li>1-Club Access</li>
-						<li>Cardio and Weights Only</li>
-						<li>Free Personal Plan</li>
-					</ul>
-					<button type="button" class="btn btn-lg btn-danger">JOIN NOW</button>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!--Memberships-->
-
-	<footer class="bg-dark text-center text-white">
-		<section class="border-top">
-			<div class="container text-center text-md-start mt-5">
-				<div class="row mt-3">
-					<div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-						<h6 class="text-uppercase fw-bold mb-4">
-							<i><img src="img/logo_200x200.png" alt=""></i>Cosmo Fitness
-						</h6>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-							molestiae quas vel sint commodi.
-						</p>
-					</div>
-
-					<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-						<p>
-							<a href="index.html" class="text-reset">Home</a>
-						</p>
-						<p>
-							<a href="memberships.html" class="text-reset">Memberships</a>
-						</p>
-						<p>
-							<a href="classes.html" class="text-reset">Classes</a>
-						</p>
-						<p>
-							<a href="amenities.html" class="text-reset">amenities</a>
-						</p>
-						<p>
-							<a href="about.html" class="text-reset">About</a>
-						</p>
+	<body>
+		<!--Navbar-->
+		<nav class="navbar navbar-expand-md navbar-light">
+			<div class="container">
+				<a class="navbar-brand" href="#">
+					<img
+						src="img/logo_200x200.png"
+						class="me-2"
+						height="40"
+						alt="CosmoFitness Logo"
+						loading="lazy"
+					/>Cosmo Fitness</a
+				>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-toggle="collapse"
+					data-target="#navbarNavAltMarkup"
+					aria-controls="navbarNavAltMarkup"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+					<div class="navbar-nav ml-auto">
+						<a class="nav-item nav-link" href="index.html">Home</a>
+						<a class="nav-item nav-link active" href="#">Memberships</a>
+						<a class="nav-item nav-link" href="classes.html">Classes</a>
+						<a class="nav-item nav-link" href="amenities.html">Amenities</a>
+						<a class="nav-item nav-link" href="about.html">About</a>
 					</div>
 				</div>
 			</div>
-		</section>
-	</footer>
+		</nav>
+		<!--Navbar-->
 
+		<!--Jumbotron-->
+		<div class="jumbotron jumbotron-fluid text-center" id="memberjumbotron">
+			<div class="container">
+				<h1 class="slogan-1">MEMBERSHIP<br />OPTIONS</h1>
+			</div>
+		</div>
 
-	<!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
-	<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-	<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-	<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+		<!--Jumbotron-->
 
-	<script src="js/scripts.js"></script>
-</body>
+		<!--Memberships-->
 
+		<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+			<h1 class="display-4">Membership Options</h1>
+			<p class="lead">Select Your Plan</p>
+		</div>
+
+		<div class="container cds">
+			<div class="card-deck mb-3 text-center">
+				<div class="card mb-4 box-shadow">
+					<div class="card-header">
+						<h4 class="my-0 font-weight-normal">Platinum</h4>
+					</div>
+					<div class="card-body">
+						<h1 class="card-title pricing-card-title">
+							$39.99 <small class="text-muted">/ mo</small>
+						</h1>
+						<ul class="list-unstyled mt-3 mb-4">
+							<li>National Access</li>
+							<li>All Gold and Silver Benefits</li>
+							<li>2 Buddy Passes</li>
+							<li>Access to Personal Trainers</li>
+							<li>Unlimited Classes</li>
+						</ul>
+						<button type="button" class="btn btn-lg btn-danger">JOIN NOW</button>
+					</div>
+				</div>
+				<div class="card mb-4 box-shadow">
+					<div class="card-header">
+						<h4 class="my-0 font-weight-normal">Gold</h4>
+					</div>
+					<div class="card-body">
+						<h1 class="card-title pricing-card-title">
+							$24.99 <small class="text-muted">/ mo</small>
+						</h1>
+						<ul class="list-unstyled mt-3 mb-4">
+							<li>Regional Access</li>
+							<li>All Silver Benefits</li>
+							<li>All amenities</li>
+							<li>2x Classes a week</li>
+							<li>Discount on Personal Trainers</li>
+						</ul>
+						<button type="button" class="btn btn-lg btn-danger">JOIN NOW</button>
+					</div>
+				</div>
+				<div class="card mb-4 box-shadow">
+					<div class="card-header">
+						<h4 class="my-0 font-weight-normal">Silver</h4>
+					</div>
+					<div class="card-body">
+						<h1 class="card-title pricing-card-title">
+							$9.99 <small class="text-muted">/ mo</small>
+						</h1>
+						<ul class="list-unstyled mt-3 mb-4">
+							<li>1-Club Access</li>
+							<li>Cardio and Weights Only</li>
+							<li>Free Personal Plan</li>
+						</ul>
+						<button type="button" class="btn btn-lg btn-danger">JOIN NOW</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--Memberships-->
+
+		<!-- Footer -->
+		<footer class="bg-dark text-center text-white">
+			<section class="border-top">
+				<div class="container text-center text-md-start mt-5">
+					<div class="row mt-3">
+						<div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+							<h6 class="text-uppercase fw-bold mb-4">
+								<i><img src="img/logo_200x200.png" alt="" /></i>Cosmo Fitness
+							</h6>
+							<div class="text-center">
+								<a class="btn btn-social-icon btn-instagram icon-style" href="#"
+									><i class="fa fa-instagram"></i
+								></a>
+								<a class="btn btn-social-icon btn-facebook icon-style" href="#"
+									><i class="fa fa-facebook"></i
+								></a>
+								<a class="btn btn-social-icon btn-twitter icon-style" href="#"
+									><i class="fa fa-twitter"></i
+								></a>
+							</div>
+						</div>
+
+						<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+							<p>
+								<a href="index.html" class="text-reset">Home</a>
+							</p>
+							<p>
+								<a href="memberships.html" class="text-reset">Memberships</a>
+							</p>
+							<p>
+								<a href="classes.html" class="text-reset">Classes</a>
+							</p>
+							<p>
+								<a href="amenities.html" class="text-reset">Amenities</a>
+							</p>
+							<p>
+								<a href="about.html" class="text-reset">About</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</footer>
+
+		<!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+		<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+		<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+		<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+		<script src="js/scripts.js"></script>
+	</body>
 </html>
