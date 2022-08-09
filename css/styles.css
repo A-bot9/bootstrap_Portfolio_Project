@@ -148,3 +148,19 @@ body {
 .icon-style:hover {
 	color: #ffc54d;
 }
+
+/* Scroll to top button */
+#btn-back-to-top {
+	background-color: #343a40;
+	border: 1px black solid;
+	border-radius: 25px;
+	color: black;
+	cursor: pointer;
+	font-size: 18px;
+	line-height: 36px;
+	width: 48px;
+}
+
+#btn-back-to-top:hover {
+	color: #ffc54d;
+}
