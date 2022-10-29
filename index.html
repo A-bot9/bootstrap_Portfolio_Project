@@ -56,57 +56,60 @@
 		</div>
 	</div>
 	<!--Jumbotron-->
+
 	<!-- Modal -->
-	<div class="modal fade" id="joinModal" tabindex="-1" role="dialog" aria-labelledby="joinModalLabel"
+	<div class="modal fade modal-danger" id="joinModal" tabindex="-1" role="dialog" aria-labelledby="joinModalLabel"
 		aria-hidden="true">
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title" id="joinModalLabel">Cosmo Fitness</h5>
+					<h5 class="modal-title" id="joinModalLabel">TEST</h5>
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span aria-hidden="true">&times;</span>
 					</button>
 				</div>
 				<div class="modal-body">
-					<form>
+					<form role="form" id="newModalForm" class="needs-validation" novalidate>
 						<div class="form-group">
-							<label for="exampleInputEmail1">Email address</label>
-							<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-							<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+							<label for="email1">Email address</label>
+							<input type="email" class="form-control" id="email1" require>
+							
 						</div>
 						<div class="form-group">
 							<label for="firstname1">First Name</label>
-							<input type="firstname" class="form-control" id="firstname1">
+							<input type="text" class="form-control" id="firstname1">
 						</div>
 						<div class="form-group">
-							<label for="exampleInputPassword1">Last Name</label>
-							<input type="lastname" class="form-control" id="exampleInputPassword1">
+							<label for="lastname1">Last Name</label>
+							<input type="text" class="form-control" id="lastname1">
 						</div>
 						<div class="form-group">
-							<label for="exampleInputPassword1">Password</label>
-							<input type="password" class="form-control" id="exampleInputPassword1">
+							<label for="password1">Password</label>
+							<input type="password" class="form-control" id="password1">
 						</div>
 						<div class="form-group">
-							<label for="payment1">Credit/Debit Card Info</label>
-							<input type="payment" class="form-control" id="payment1">
+							<label for="paymenttype">Credit/Debit Card Info</label>
+							<input type="payment" class="form-control" id="paymenttype">
 							<small id="emailHelp" class="form-text text-muted">Ex. xxxx-xxxx-xxxx-xxxx, only numbers</small>
 						</div>
 						<div class="form-group">
 							<label for="payment1">Choose your membership</label>
 						</div>
-						<div class="form-group form-check form-check-inline">
-							<input type="checkbox" class="form-check-input" id="exampleCheck1">
-							<label class="form-check-label" for="exampleCheck1">Silver</label>
+						<div class="custom-control custom-radio custom-control-inline">
+							<input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+							<label class="custom-control-label" for="customRadioInline1">Silver</label>
 						</div>
-						<div class="form-group form-check form-check-inline">
-							<input type="checkbox" class="form-check-input" id="exampleCheck1">
-							<label class="form-check-label" for="exampleCheck1">Gold</label>
+						<div class="custom-control custom-radio custom-control-inline">
+							<input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+							<label class="custom-control-label" for="customRadioInline2">Gold</label>
 						</div>
-						<div class="form-group form-check form-check-inline">
-							<input type="checkbox" class="form-check-input" id="exampleCheck1">
-							<label class="form-check-label" for="exampleCheck1">Platinum</label>
+						<div class="custom-control custom-radio custom-control-inline">
+							<input type="radio" id="customRadioInline3" name="customRadioInline1" class="custom-control-input">
+							<label class="custom-control-label" for="customRadioInline3">Platinum</label>
 						</div>
+						
 					</form>
+					<br>
 					<button type="submit" class="btn btn-primary">Submit</button>
 				</div>
 				<div class="modal-footer">
@@ -119,9 +122,9 @@
 	<!-- Modal -->
 
 
-	<!-- Carousel -->
+	<!-- Content -->
 	<div class="container">
-		<!-- 1st Content on Carousel -->
+		<!-- 1st Content-->
 		<div class="row content-style align-items-center">
 			<div class="col">
 				<div class="media">
@@ -137,7 +140,7 @@
 			</div>
 		</div>
 
-		<!-- 2nd Content on Carousel -->
+		<!-- 2nd Content-->
 		<div class="row content-style align-items-center">
 			<div class="col">
 				<div class="media">
@@ -154,7 +157,7 @@
 			</div>
 		</div>
 
-		<!-- 3rd Content on Carousel -->
+		<!-- 3rd Content -->
 		<div class="row content-style align-items-center">
 			<div class="col">
 				<div class="media">
@@ -172,7 +175,7 @@
 			</div>
 		</div>
 	</div>
-	<!-- Carousel -->
+	<!-- Content -->
 	
 	
 
@@ -227,11 +230,13 @@
 	<!-- Footer -->
 
 	<!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
-	<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.14.0/jquery.validate.min.js"></script>
 	<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
 	<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
 	<script src="btnTop.js"></script>
+	<script src="validateModal.js"></script>
 </body>
 
 </html>
