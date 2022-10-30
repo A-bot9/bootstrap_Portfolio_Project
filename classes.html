@@ -1,55 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<!-- Required meta tags always come first -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-	<!-- Required meta tags always come first -->
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
 
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+		<!-- Additional CSS must be placed after Bootstrap CSS -->
+		<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="css/styles.css" />
+		<!-- <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" /> -->
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Viga&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap"
+			rel="stylesheet"
+		/>
 
-	<!-- Additional CSS must be placed after Bootstrap CSS -->
-	<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
-	<link rel="stylesheet" href="css/styles.css" />
-	<!-- <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" /> -->
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
-	<link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet" />
-	<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap" rel="stylesheet" />
-	
+		<title>Cosmo Fitness</title>
+	</head>
 
-	<title>Cosmo Fitnes</title>
-</head>
-
-<body>
-	<!--Navbar-->
-	<nav class="navbar navbar-expand-md navbar-light">
-		<div class="container">
-			<a class="navbar-brand" href="#">
-				<img src="img/logo_200x200.png" class="me-2" height="40" alt="CosmoFitness Logo" loading="lazy" />Cosmo
-				Fitness</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-				aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-				<div class="navbar-nav ml-auto">
-					<a class="nav-item nav-link" href="index.html">Home</a>
-					<a class="nav-item nav-link" href="memberships.html">Memberships</a>
-					<a class="nav-item nav-link active" href="#">Classes</a>
-					<a class="nav-item nav-link" href="amenities.html">Amenities</a>
-					<a class="nav-item nav-link" href="about.html">About</a>
+	<body>
+		<!--Navbar-->
+		<nav class="navbar navbar-expand-md navbar-light">
+			<div class="container">
+				<a class="navbar-brand" href="#">
+					<img
+						src="img/logo_200x200.png"
+						class="me-2"
+						height="40"
+						alt="CosmoFitness Logo"
+						loading="lazy"
+					/>Cosmo Fitness</a
+				>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-toggle="collapse"
+					data-target="#navbarNavAltMarkup"
+					aria-controls="navbarNavAltMarkup"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+					<div class="navbar-nav ml-auto">
+						<a class="nav-item nav-link" href="index.html">Home</a>
+						<a class="nav-item nav-link" href="memberships.html">Memberships</a>
+						<a class="nav-item nav-link active" href="#">Classes</a>
+						<a class="nav-item nav-link" href="amenities.html">Amenities</a>
+						<a class="nav-item nav-link" href="about.html">About</a>
+					</div>
 				</div>
 			</div>
-		</div>
-	</nav>
-	<!--Navbar-->
+		</nav>
+		<!--Navbar-->
 
-	<!--Jumbotron-->
-	<div class="jumbotron jumbotron-fluid text-center" id="classjumbotron">
-		<div class="container">
-			<h1 class="slogan-1">BOOST YOUR<br />FITNESS</h1>
-			<button
+		<!--Jumbotron-->
+		<div class="jumbotron jumbotron-fluid text-center" id="classjumbotron">
+			<div class="container">
+				<h1 class="slogan-1">BOOST YOUR<br />FITNESS</h1>
+				<button
 					type="button"
 					class="btn btn-danger btn-lg"
 					data-toggle="modal"
@@ -57,182 +77,271 @@
 				>
 					JOIN NOW
 				</button>
+			</div>
 		</div>
-	</div>
-	<!--Jumbotron-->
-	
-	<!-- Modal -->
-	<div class="modal fade" id="joinModal" tabindex="-1" role="dialog" aria-labelledby="joinModalLabel"
-aria-hidden="true">
-<div class="modal-dialog" role="document">
-	<div class="modal-content">
-		<div class="modal-header">
-			<h5 class="modal-title" id="joinModalLabel">Cosmo Fitness</h5>
-			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-				<span aria-hidden="true">&times;</span>
-			</button>
-		</div>
-		<div class="modal-body">
-			<h3>Thank you for joining Cosmo Fitness! </h3>
-		</div>
-		<div class="modal-footer">
-			<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-		</div>
-	</div>
-</div>
-</div>
-<!-- Modal -->
+		<!--Jumbotron-->
 
-
-	<!--Classes-->
-	<div class="-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-		<h1 class="display-4">Our Classes</h1>
-		<p class="lead">We offer a wide variety of classes at Cosmo Fitness! Don't be afraid to get involved </p>
-	</div>
-	<div class="container">
-		<div class="row row-content align-items-center">
-			<div class="col">
-				<div class="media">
-					<img id="classescf" loading="lazy" class="d-flex mr-3 img-thumbnail float-right"
-						src="img/weightlifting.jpg" alt="#" />
-					<div class="media-body align-self-center text-center">
-						<h3>Weightlifting Class</h3>
-						<p class="d-none d-sm-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-							mollitia,
-							molestiae quas vel sint commodi!</p>
+		<!-- Modal -->
+		<div
+			class="modal fade modal-danger"
+			id="joinModal"
+			tabindex="-1"
+			role="dialog"
+			aria-labelledby="joinModalLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title font-weight-bold" id="joinModalLabel">
+							Cosmo Fitness Sign Up
+						</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<form class="needs-validation" novalidate>
+							<div class="form-row">
+								<div class="col-md-6 mb-3">
+									<label for="validationCustom01">First Name</label>
+									<input type="text" class="form-control" id="validationCustom01" required />
+									<div class="valid-feedback">Looks good!</div>
+									<div class="invalid-feedback">Please provide a First Name.</div>
+								</div>
+								<div class="col-md-6 mb-3">
+									<label for="validationCustom02">Last Name</label>
+									<input type="text" class="form-control" id="validationCustom02" required />
+									<div class="valid-feedback">Looks good!</div>
+									<div class="invalid-feedback">Please provide a Last Name.</div>
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="col-md-6 mb-3">
+									<label for="validationCustom03">Email</label>
+									<input type="text" class="form-control" id="validationCustom03" required />
+									<div class="valid-feedback">Looks good!</div>
+									<div class="invalid-feedback">Please provide an Email.</div>
+								</div>
+								<div class="col-md-6 mb-3">
+									<label for="validationCustom04">Credit/Debit Card Info</label>
+									<input type="text" class="form-control" id="validationCustom04" required />
+									<div class="invalid-feedback">Please provide a valid Credit/Debit Card.</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="form-check">
+									<input
+										class="form-check-input"
+										type="checkbox"
+										value=""
+										id="invalidCheck"
+										required
+									/>
+									<label class="form-check-label" for="invalidCheck">
+										Agree to terms and conditions
+									</label>
+									<div class="invalid-feedback">You must agree before submitting.</div>
+								</div>
+							</div>
+							<button class="btn btn-warning btn-sm" type="submit">Join CF</button>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 					</div>
 				</div>
 			</div>
 		</div>
+		<!-- Modal -->
 
-		<div class="row row-content align-items-center">
-			<div class="col">
-				<div class="media">
-					<div class="media-body align-self-center text-center">
-						<h3>Athletic Trainig</h3>
-						<p class="d-none d-sm-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-							mollitia,
-							molestiae quas vel sint commodi!</p>
-					</div>
-					<img id="classescf" class="d-flex ml-3 img-thumbnail" src="img/athletic trainigh.jpg" alt="" />
-				</div>
-			</div>
+		<!--Classes-->
+		<div class="-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+			<h1 class="display-4">Our Classes</h1>
+			<p class="lead">
+				We offer a wide variety of classes at Cosmo Fitness! Don't be afraid to get involved
+			</p>
 		</div>
-
-		<div class="row row-content align-items-center">
-			<div class="col">
-				<div class="media">
-					<img id="classescf" class="d-flex mr-3 img-thumbnail float-right" src="img/yoga.jpg" alt="#" />
-					<div class="media-body align-self-center text-center">
-						<h3 class=>Yoga</h3>
-						<p class="d-none d-sm-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-							mollitia,
-							molestiae quas vel sint commodi!</p>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="row row-content align-items-center">
-			<div class="col">
-				<div class="media">
-					<div class="media-body align-self-center text-center">
-						<h3>Boxing</h3>
-						<p class="d-none d-sm-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-							mollitia,
-							molestiae quas vel sint commodi!</p>
-					</div>
-					<img id="classescf" class="d-flex ml-3 img-thumbnail" src="img/boxingimg.png" alt="" />
-				</div>
-			</div>
-		</div>
-
-		<div class="row row-content align-items-center">
-			<div class="col">
-				<div class="media">
-					<img id="classescf" class="d-flex mr-3 img-thumbnail float-right" src="img/streachandrecovery.jpg"
-						alt="#" />
-					<div class="media-body align-self-center text-center">
-						<h3>Strech and Recovery</h3>
-						<p class="d-none d-sm-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-							mollitia,
-							molestiae quas vel sint commodi!</p>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="row row-content align-items-center">
-			<div class="col">
-				<div class="media">
-					<div class="media-body align-self-center text-center">
-						<h3>Water Aerobics</h3>
-						<p class="d-none d-sm-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-							mollitia,
-							molestiae quas vel sint commodi!</p>
-					</div>
-					<img id="classescf" class="d-flex ml-3 img-thumbnail" src="img/wateraerobics.jpg" alt="" />
-				</div>
-			</div>
-		</div>
-	</div>
-	<!--Classes-->
-
-	<!-- Footer -->
-	<footer class="bg-dark text-center text-white">
-		<section class="border-top">
-			<div class="container">
-				<div class="text-center"><button type="button"
-					class="btn btn-floating btn-lg "
-					id="btn-back-to-top"><i class="fa fa-arrow-up"></i></button></div>
-				</div>
-			<div class="container text-center text-md-start mt-5">
-				<div class="row mt-3">
-					<div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-						<h6 class="text-uppercase fw-bold mb-4">
-							<i><img src="img/logo_200x200.png" alt=""></i>Cosmo Fitness
-						</h6>
-						<div class="text-center">
-							<a class="btn btn-social-icon  icon-style" href="#"
-								><i class="fa fa-instagram"></i
-							></a>
-							<a class="btn btn-social-icon btn-facebook icon-style" href="#"
-								><i class="fa fa-facebook"></i
-							></a>
-							<a class="btn btn-social-icon btn-twitter icon-style" href="#"
-								><i class="fa fa-twitter"></i
-							></a>
+		<div class="container">
+			<div class="row row-content align-items-center">
+				<div class="col">
+					<div class="media">
+						<img
+							id="classescf"
+							loading="lazy"
+							class="d-flex mr-3 img-thumbnail float-right"
+							src="img/weightlifting.jpg"
+							alt="#"
+						/>
+						<div class="media-body align-self-center text-center">
+							<h3>Weightlifting Class</h3>
+							<p class="d-none d-sm-block">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+								molestiae quas vel sint commodi!
+							</p>
 						</div>
 					</div>
+				</div>
+			</div>
 
-					<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-						<p>
-							<a href="index.html" class="text-reset">Home</a>
-						</p>
-						<p>
-							<a href="memberships.html" class="text-reset">Memberships</a>
-						</p>
-						<p>
-							<a href="#" class="text-reset">Classes</a>
-						</p>
-						<p>
-							<a href="amenities.html" class="text-reset">Amenities</a>
-						</p>
-						<p>
-							<a href="about.html" class="text-reset">About</a>
-						</p>
+			<div class="row row-content align-items-center">
+				<div class="col">
+					<div class="media">
+						<div class="media-body align-self-center text-center">
+							<h3>Athletic Trainig</h3>
+							<p class="d-none d-sm-block">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+								molestiae quas vel sint commodi!
+							</p>
+						</div>
+						<img
+							id="classescf"
+							class="d-flex ml-3 img-thumbnail"
+							src="img/athletic trainigh.jpg"
+							alt=""
+						/>
 					</div>
 				</div>
 			</div>
-		</section>
-	</footer>
-	<!-- Footer -->
 
-	<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-	<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-	<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+			<div class="row row-content align-items-center">
+				<div class="col">
+					<div class="media">
+						<img
+							id="classescf"
+							class="d-flex mr-3 img-thumbnail float-right"
+							src="img/yoga.jpg"
+							alt="#"
+						/>
+						<div class="media-body align-self-center text-center">
+							<h3>Yoga</h3>
+							<p class="d-none d-sm-block">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+								molestiae quas vel sint commodi
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
 
-	<script src="btnTop.js"></script>
-</body>
+			<div class="row row-content align-items-center">
+				<div class="col">
+					<div class="media">
+						<div class="media-body align-self-center text-center">
+							<h3>Boxing</h3>
+							<p class="d-none d-sm-block">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+								molestiae quas vel sint commodi!
+							</p>
+						</div>
+						<img
+							id="classescf"
+							class="d-flex ml-3 img-thumbnail"
+							src="img/boxingimg.png"
+							alt=""
+						/>
+					</div>
+				</div>
+			</div>
 
+			<div class="row row-content align-items-center">
+				<div class="col">
+					<div class="media">
+						<img
+							id="classescf"
+							class="d-flex mr-3 img-thumbnail float-right"
+							src="img/streachandrecovery.jpg"
+							alt="#"
+						/>
+						<div class="media-body align-self-center text-center">
+							<h3>Strech and Recovery</h3>
+							<p class="d-none d-sm-block">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+								molestiae quas vel sint commodi!
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row row-content align-items-center">
+				<div class="col">
+					<div class="media">
+						<div class="media-body align-self-center text-center">
+							<h3>Water Aerobics</h3>
+							<p class="d-none d-sm-block">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+								molestiae quas vel sint commodi!
+							</p>
+						</div>
+						<img
+							id="classescf"
+							class="d-flex ml-3 img-thumbnail"
+							src="img/wateraerobics.jpg"
+							alt=""
+						/>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--Classes-->
+
+		<!-- Footer -->
+		<footer class="bg-dark text-center text-white">
+			<section class="border-top">
+				<div class="container">
+					<div class="text-center">
+						<button type="button" class="btn btn-floating btn-lg" id="btn-back-to-top">
+							<i class="fa fa-arrow-up"></i>
+						</button>
+					</div>
+				</div>
+				<div class="container text-center text-md-start mt-5">
+					<div class="row mt-3">
+						<div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+							<h6 class="text-uppercase fw-bold mb-4">
+								<i><img src="img/logo_200x200.png" alt="" /></i>Cosmo Fitness
+							</h6>
+							<div class="text-center">
+								<a class="btn btn-social-icon icon-style" href="#"
+									><i class="fa fa-instagram"></i
+								></a>
+								<a class="btn btn-social-icon btn-facebook icon-style" href="#"
+									><i class="fa fa-facebook"></i
+								></a>
+								<a class="btn btn-social-icon btn-twitter icon-style" href="#"
+									><i class="fa fa-twitter"></i
+								></a>
+							</div>
+						</div>
+
+						<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+							<p>
+								<a href="index.html" class="text-reset">Home</a>
+							</p>
+							<p>
+								<a href="memberships.html" class="text-reset">Memberships</a>
+							</p>
+							<p>
+								<a href="#" class="text-reset">Classes</a>
+							</p>
+							<p>
+								<a href="amenities.html" class="text-reset">Amenities</a>
+							</p>
+							<p>
+								<a href="about.html" class="text-reset">About</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</footer>
+		<!-- Footer -->
+
+		<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+		<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+		<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+		<script src="btnTop.js"></script>
+	</body>
 </html>

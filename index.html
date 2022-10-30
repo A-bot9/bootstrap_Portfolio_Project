@@ -1,32 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<!-- Required meta tags always come first -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-	<!-- Required meta tags always come first -->
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+		<!-- Additional CSS must be placed after Bootstrap CSS -->
+		<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="css/styles.css" />
+		<link href="https://fonts.googleapis.com/css?family=Viga" rel="stylesheet" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Viga&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap"
+			rel="stylesheet"
+		/>
+		<title>CosmoFitness</title>
+	</head>
 
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
-	<!-- Additional CSS must be placed after Bootstrap CSS -->
-	<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
-	<link rel="stylesheet" href="css/styles.css" />
-	<link href="https://fonts.googleapis.com/css?family=Viga" rel="stylesheet" />
-	<link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet" />
-	<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap" rel="stylesheet" />
-	<title>CosmoFitness</title>
-</head>
-
-<body>
-	<!--Navbar-->
+	<body>
+		<!--Navbar-->
 		<nav class="navbar navbar-expand-md navbar-light">
 			<div class="container">
 				<a class="navbar-brand" href="#">
-					<img src="img/logo_200x200.png" class="me-2" height="40" alt="CosmoFitness Logo"
-						loading="lazy" />Cosmo
-					Fitness</a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-					aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+					<img
+						src="img/logo_200x200.png"
+						class="me-2"
+						height="40"
+						alt="CosmoFitness Logo"
+						loading="lazy"
+					/>Cosmo Fitness</a
+				>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-toggle="collapse"
+					data-target="#navbarNavAltMarkup"
+					aria-controls="navbarNavAltMarkup"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -38,205 +55,233 @@
 						<a class="nav-item nav-link" href="about.html">About</a>
 					</div>
 				</div>
-				
 			</div>
-			
 		</nav>
-	<!--Navbar-->
+		<!--Navbar-->
 
-	<!--Jumbotron-->
-	<div class="jumbotron"
-		style="background-image: url('img/cosmofitnesshero.jpg'); background-size: cover; height: 480px;">
-		<div class="container mt-4 text-center">
-			<h1 class="slogan-1">Choose Us<br />Choose health</h1>
-			<!-- Button trigger modal -->
-			<button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#joinModal">
-				JOIN NOW
-			</button>
-		</div>
-	</div>
-	<!--Jumbotron-->
-
-	<!-- Modal -->
-	<div class="modal fade modal-danger" id="joinModal" tabindex="-1" role="dialog" aria-labelledby="joinModalLabel"
-		aria-hidden="true">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h5 class="modal-title" id="joinModalLabel">TEST</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-				<div class="modal-body">
-					<form role="form" id="newModalForm" class="needs-validation" novalidate>
-						<div class="form-group">
-							<label for="email1">Email address</label>
-							<input type="email" class="form-control" id="email1" require>
-							
-						</div>
-						<div class="form-group">
-							<label for="firstname1">First Name</label>
-							<input type="text" class="form-control" id="firstname1">
-						</div>
-						<div class="form-group">
-							<label for="lastname1">Last Name</label>
-							<input type="text" class="form-control" id="lastname1">
-						</div>
-						<div class="form-group">
-							<label for="password1">Password</label>
-							<input type="password" class="form-control" id="password1">
-						</div>
-						<div class="form-group">
-							<label for="paymenttype">Credit/Debit Card Info</label>
-							<input type="payment" class="form-control" id="paymenttype">
-							<small id="emailHelp" class="form-text text-muted">Ex. xxxx-xxxx-xxxx-xxxx, only numbers</small>
-						</div>
-						<div class="form-group">
-							<label for="payment1">Choose your membership</label>
-						</div>
-						<div class="custom-control custom-radio custom-control-inline">
-							<input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
-							<label class="custom-control-label" for="customRadioInline1">Silver</label>
-						</div>
-						<div class="custom-control custom-radio custom-control-inline">
-							<input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
-							<label class="custom-control-label" for="customRadioInline2">Gold</label>
-						</div>
-						<div class="custom-control custom-radio custom-control-inline">
-							<input type="radio" id="customRadioInline3" name="customRadioInline1" class="custom-control-input">
-							<label class="custom-control-label" for="customRadioInline3">Platinum</label>
-						</div>
-						
-					</form>
-					<br>
-					<button type="submit" class="btn btn-primary">Submit</button>
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-				</div>
-				
+		<!--Jumbotron-->
+		<div
+			class="jumbotron"
+			style="
+				background-image: url('img/cosmofitnesshero.jpg');
+				background-size: cover;
+				height: 480px;
+			"
+		>
+			<div class="container mt-4 text-center">
+				<h1 class="slogan-1">Choose Us<br />Choose health</h1>
+				<!-- Button trigger modal -->
+				<button
+					type="button"
+					class="btn btn-danger btn-lg"
+					data-toggle="modal"
+					data-target="#joinModal"
+				>
+					JOIN NOW
+				</button>
 			</div>
 		</div>
-	</div>
-	<!-- Modal -->
+		<!--Jumbotron-->
 
-
-	<!-- Content -->
-	<div class="container">
-		<!-- 1st Content-->
-		<div class="row content-style align-items-center">
-			<div class="col">
-				<div class="media">
-					<div class="media-body align-self-center" id="carousel-font-size">
-						<h3>ALL OUR LOCATIONS</h3>
-						<p class="d-none d-sm-block">
-							Why choose Cosmo Fitness? We offer what 99.99% of gyms DO NOT. </br>We are open
-							Monday-Sunday. ALL DAY. ALL NIGHT.
-						</p>
+		<!-- Modal -->
+		<div
+			class="modal fade modal-danger"
+			id="joinModal"
+			tabindex="-1"
+			role="dialog"
+			aria-labelledby="joinModalLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title font-weight-bold" id="joinModalLabel">
+							Cosmo Fitness Sign Up
+						</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
 					</div>
-					<img class="d-flex ml-3 img-fluid img-thumbnail img-style" src="img/giphyIMG.gif" alt="Open 24/7" />
-				</div>
-			</div>
-		</div>
-
-		<!-- 2nd Content-->
-		<div class="row content-style align-items-center">
-			<div class="col">
-				<div class="media">
-					<img class="d-flex mr-3 img-fluid img-thumbnail img-style" src="img/studio.png"
-						alt="CF Recovery Room" />
-					<div class="media-body align-self-center" id="carousel-font-size">
-						<h3>COSMO CLASSES</h3>
-						<p class="d-none d-sm-block">
-							Top notche classes led by the best instructors in all of the cosmos. </br> Yoga, dance,
-							boxing, HIIT. — Come lift your mood and your motivation.
-						</p>
+					<div class="modal-body">
+						<form class="needs-validation" novalidate>
+							<div class="form-row">
+								<div class="col-md-6 mb-3">
+									<label for="validationCustom01">First Name</label>
+									<input type="text" class="form-control" id="validationCustom01" required />
+									<div class="valid-feedback">Looks good!</div>
+									<div class="invalid-feedback">Please provide a First Name.</div>
+								</div>
+								<div class="col-md-6 mb-3">
+									<label for="validationCustom02">Last Name</label>
+									<input type="text" class="form-control" id="validationCustom02" required />
+									<div class="valid-feedback">Looks good!</div>
+									<div class="invalid-feedback">Please provide a Last Name.</div>
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="col-md-6 mb-3">
+									<label for="validationCustom03">Email</label>
+									<input type="text" class="form-control" id="validationCustom03" required />
+									<div class="valid-feedback">Looks good!</div>
+									<div class="invalid-feedback">Please provide an Email.</div>
+								</div>
+								<div class="col-md-6 mb-3">
+									<label for="validationCustom04">Credit/Debit Card Info</label>
+									<input type="text" class="form-control" id="validationCustom04" required />
+									<div class="invalid-feedback">Please provide a valid Credit/Debit Card.</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="form-check">
+									<input
+										class="form-check-input"
+										type="checkbox"
+										value=""
+										id="invalidCheck"
+										required
+									/>
+									<label class="form-check-label" for="invalidCheck">
+										Agree to terms and conditions
+									</label>
+									<div class="invalid-feedback">You must agree before submitting.</div>
+								</div>
+							</div>
+							<button class="btn btn-warning btn-sm" type="submit">Join CF</button>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 					</div>
 				</div>
 			</div>
 		</div>
+		<!-- Modal -->
 
-		<!-- 3rd Content -->
-		<div class="row content-style align-items-center">
-			<div class="col">
-				<div class="media">
-					<div class="media-body align-self-center" id="carousel-font-size">
-						<h3>THE. COSMO. PERKS.</h3>
-						<p class="d-none d-sm-block">
-							The CF Obsidian Card comes with benefits. </br>Which include: Use at ALL our locations,
-							bring a guest with you EVERY TIME, use of massage chairs, use of sauna room, basketball gym
-							facility, racketball facility, and discount on our in store vending machines
-						</p>
+		<!-- Content -->
+		<div class="container">
+			<!-- 1st Content-->
+			<div class="row content-style align-items-center">
+				<div class="col">
+					<div class="media">
+						<div class="media-body align-self-center" id="carousel-font-size">
+							<h3>ALL OUR LOCATIONS</h3>
+							<p class="d-none d-sm-block">
+								Why choose Cosmo Fitness? We offer what 99.99% of gyms DO NOT. <br />We are open
+								Monday-Sunday. ALL DAY. ALL NIGHT.
+							</p>
+						</div>
+						<img
+							class="d-flex ml-3 img-fluid img-thumbnail img-style"
+							src="img/giphyIMG.gif"
+							alt="Open 24/7"
+						/>
 					</div>
-					<img class="d-flex ml-3 img-fluid img-thumbnail img-style" src="img/CF-Recovery.jpg"
-						alt="Cosmo Perks" />
+				</div>
+			</div>
+
+			<!-- 2nd Content-->
+			<div class="row content-style align-items-center">
+				<div class="col">
+					<div class="media">
+						<img
+							class="d-flex mr-3 img-fluid img-thumbnail img-style"
+							src="img/studio.png"
+							alt="CF Recovery Room"
+						/>
+						<div class="media-body align-self-center" id="carousel-font-size">
+							<h3>COSMO CLASSES</h3>
+							<p class="d-none d-sm-block">
+								Top notche classes led by the best instructors in all of the cosmos. <br />
+								Yoga, dance, boxing, HIIT. — Come lift your mood and your motivation.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- 3rd Content -->
+			<div class="row content-style align-items-center">
+				<div class="col">
+					<div class="media">
+						<div class="media-body align-self-center" id="carousel-font-size">
+							<h3>THE. COSMO. PERKS.</h3>
+							<p class="d-none d-sm-block">
+								The CF Obsidian Card comes with benefits. <br />Which include: Use at ALL our
+								locations, bring a guest with you EVERY TIME, use of massage chairs, use of sauna
+								room, basketball gym facility, racketball facility, and discount on our in store
+								vending machines
+							</p>
+						</div>
+						<img
+							class="d-flex ml-3 img-fluid img-thumbnail img-style"
+							src="img/CF-Recovery.jpg"
+							alt="Cosmo Perks"
+						/>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<!-- Content -->
-	
-	
+		<!-- Content -->
 
-	<!-- Footer -->
-	<footer class="bg-dark text-center text-white">
-		<section class="border-top">
-			<div class="container">
-			<div class="text-center"><button type="button"
-				class="btn btn-floating btn-lg "
-				id="btn-back-to-top"><i class="fa fa-arrow-up"></i></button></div>
-			</div>
-			<div class="container text-center text-md-start mt-5">
-				<div class="row mt-3">
-					<div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-						<h6 class="text-uppercase fw-bold mb-4">
-							<i><img src="img/logo_200x200.png" alt=""></i>Cosmo Fitness
-						</h6>
-						<div class="text-center">
-							<a class="btn btn-social-icon btn-instagram icon-style" href="#"
-								><i class="fa fa-instagram"></i
-							></a>
-							<a class="btn btn-social-icon btn-facebook icon-style" href="#"
-								><i class="fa fa-facebook"></i
-							></a>
-							<a class="btn btn-social-icon btn-twitter icon-style" href="#"
-								><i class="fa fa-twitter"></i
-							></a>
-						</div>
-					</div>
-
-					<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-						<p>
-							<a href="index.html" class="text-reset">Home</a>
-						</p>
-						<p>
-							<a href="memberships.html" class="text-reset">Memberships</a>
-						</p>
-						<p>
-							<a href="classes.html" class="text-reset">Classes</a>
-						</p>
-						<p>
-							<a href="amenities.html" class="text-reset">Amenities</a>
-						</p>
-						<p>
-							<a href="About.html" class="text-reset">About</a>
-						</p>
+		<!-- Footer -->
+		<footer class="bg-dark text-center text-white">
+			<section class="border-top">
+				<div class="container">
+					<div class="text-center">
+						<button type="button" class="btn btn-floating btn-lg" id="btn-back-to-top">
+							<i class="fa fa-arrow-up"></i>
+						</button>
 					</div>
 				</div>
-			</div>
-		</section>
-	</footer>
-	<!-- Footer -->
+				<div class="container text-center text-md-start mt-5">
+					<div class="row mt-3">
+						<div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+							<h6 class="text-uppercase fw-bold mb-4">
+								<i><img src="img/logo_200x200.png" alt="" /></i>Cosmo Fitness
+							</h6>
+							<div class="text-center">
+								<a class="btn btn-social-icon btn-instagram icon-style" href="#"
+									><i class="fa fa-instagram"></i
+								></a>
+								<a class="btn btn-social-icon btn-facebook icon-style" href="#"
+									><i class="fa fa-facebook"></i
+								></a>
+								<a class="btn btn-social-icon btn-twitter icon-style" href="#"
+									><i class="fa fa-twitter"></i
+								></a>
+							</div>
+						</div>
 
-	<!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.14.0/jquery.validate.min.js"></script>
-	<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-	<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+						<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+							<p>
+								<a href="index.html" class="text-reset">Home</a>
+							</p>
+							<p>
+								<a href="memberships.html" class="text-reset">Memberships</a>
+							</p>
+							<p>
+								<a href="classes.html" class="text-reset">Classes</a>
+							</p>
+							<p>
+								<a href="amenities.html" class="text-reset">Amenities</a>
+							</p>
+							<p>
+								<a href="About.html" class="text-reset">About</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</footer>
+		<!-- Footer -->
 
-	<script src="btnTop.js"></script>
-	<script src="validateModal.js"></script>
-</body>
+		<!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.14.0/jquery.validate.min.js"></script>
+		<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+		<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
+		<script src="btnTop.js"></script>
+		<script src="validateModal.js"></script>
+	</body>
 </html>

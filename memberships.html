@@ -84,7 +84,7 @@
 
 		<!-- Modal -->
 		<div
-			class="modal fade"
+			class="modal fade modal-danger"
 			id="joinModal"
 			tabindex="-1"
 			role="dialog"
@@ -94,13 +94,59 @@
 			<div class="modal-dialog" role="document">
 				<div class="modal-content">
 					<div class="modal-header">
-						<h5 class="modal-title" id="joinModalLabel">Cosmo Fitness</h5>
+						<h5 class="modal-title font-weight-bold" id="joinModalLabel">
+							Cosmo Fitness Sign Up
+						</h5>
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 							<span aria-hidden="true">&times;</span>
 						</button>
 					</div>
 					<div class="modal-body">
-						<h3>Thank you for joining Cosmo Fitness!</h3>
+						<form class="needs-validation" novalidate>
+							<div class="form-row">
+								<div class="col-md-6 mb-3">
+									<label for="validationCustom01">First Name</label>
+									<input type="text" class="form-control" id="validationCustom01" required />
+									<div class="valid-feedback">Looks good!</div>
+									<div class="invalid-feedback">Please provide a First Name.</div>
+								</div>
+								<div class="col-md-6 mb-3">
+									<label for="validationCustom02">Last Name</label>
+									<input type="text" class="form-control" id="validationCustom02" required />
+									<div class="valid-feedback">Looks good!</div>
+									<div class="invalid-feedback">Please provide a Last Name.</div>
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="col-md-6 mb-3">
+									<label for="validationCustom03">Email</label>
+									<input type="text" class="form-control" id="validationCustom03" required />
+									<div class="valid-feedback">Looks good!</div>
+									<div class="invalid-feedback">Please provide an Email.</div>
+								</div>
+								<div class="col-md-6 mb-3">
+									<label for="validationCustom04">Credit/Debit Card Info</label>
+									<input type="text" class="form-control" id="validationCustom04" required />
+									<div class="invalid-feedback">Please provide a valid Credit/Debit Card.</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="form-check">
+									<input
+										class="form-check-input"
+										type="checkbox"
+										value=""
+										id="invalidCheck"
+										required
+									/>
+									<label class="form-check-label" for="invalidCheck">
+										Agree to terms and conditions
+									</label>
+									<div class="invalid-feedback">You must agree before submitting.</div>
+								</div>
+							</div>
+							<button class="btn btn-warning btn-sm" type="submit">Join CF</button>
+						</form>
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
