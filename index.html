@@ -19,7 +19,7 @@
 			href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap"
 			rel="stylesheet"
 		/>
-		<title>CosmoFitness</title>
+		<title>CosmoFitnes</title>
 	</head>
 
 	<body>
@@ -55,6 +55,14 @@
 						<a class="nav-item nav-link" href="about.html">About</a>
 					</div>
 				</div>
+				<button
+					type="button"
+					class="btn btn-dark btn-md ml-2"
+					data-toggle="modal"
+					data-target="#loginModal"
+				>
+					LOGIN
+				</button>
 			</div>
 		</nav>
 		<!--Navbar-->
@@ -83,7 +91,50 @@
 		</div>
 		<!--Jumbotron-->
 
-		<!-- Modal -->
+		<!-- Login Modal -->
+		<div
+			class="modal fade modal-danger"
+			id="loginModal"
+			tabindex="-1"
+			role="dialog"
+			aria-labelledby="joinModalLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title font-weight-bold" id="joinModalLabel">
+							Cosmo Fitness Login
+						</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<form>
+							<div class="form-row">
+								<div class="col-md-6 mb-3">
+									<label>Email</label>
+									<input type="text" class="form-control" />
+								</div>
+								<div class="col-md-6 mb-3">
+									<label>Password</label>
+									<input type="text" class="form-control" />
+								</div>
+							</div>
+							<button class="btn btn-warning btn-sm" type="submit">Login</button>
+							<a class="text-primary ml-2 cursor-pointer">Forgot Password?</a>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Login Modal -->
+
+		<!-- Join Now Modal -->
 		<div
 			class="modal fade modal-danger"
 			id="joinModal"
@@ -96,7 +147,7 @@
 				<div class="modal-content">
 					<div class="modal-header">
 						<h5 class="modal-title font-weight-bold" id="joinModalLabel">
-							Cosmo Fitness Sign U
+							Cosmo Fitness Sign Up
 						</h5>
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 							<span aria-hidden="true">&times;</span>
@@ -126,8 +177,17 @@
 									<div class="invalid-feedback">Please provide an Email.</div>
 								</div>
 								<div class="col-md-6 mb-3">
-									<label for="validationCustom04">Credit/Debit Card Info</label>
+									<label for="validationCustom04">Password</label>
 									<input type="text" class="form-control" id="validationCustom04" required />
+									<div class="valid-feedback">Looks good!</div>
+									<div class="invalid-feedback">Please provide a Password.</div>
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="col-md-6 mb-3">
+									<label for="validationCustom05">Credit/Debit Card Info</label>
+									<input type="text" class="form-control" id="validationCustom05" required />
+									<div class="valid-feedback">Looks good!</div>
 									<div class="invalid-feedback">Please provide a valid Credit/Debit Card.</div>
 								</div>
 							</div>
@@ -155,7 +215,7 @@
 				</div>
 			</div>
 		</div>
-		<!-- Modal -->
+		<!-- Join Now Modal -->
 
 		<!-- Content -->
 		<div class="container">

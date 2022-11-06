@@ -164,3 +164,7 @@ body {
 #btn-back-to-top:hover {
 	color: #ffc54d;
 }
+
+.cursor-pointer {
+	cursor: pointer;
+}
